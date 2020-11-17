@@ -111,7 +111,7 @@ nav#menu li {
     display: inline-block; 
     background-color: rgb(100, 194, 194);
     padding: 10px;
-    margin: 2px;
+    margin: -1px;
     transition: background-color 1s;
 }
 
