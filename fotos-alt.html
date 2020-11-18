@@ -1,15 +1,52 @@
-Google Glass
-A revolução do Google está chegando
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="curso-html5-pacote01/projeto-glass-html5/icones/favicon.ico" type="image/x-icon">
+        
+<!-- Para criar um icone para o título do site, usar o comando <link:favicon> e coloca o diretório da imagem no parâmetro href"" -->
 
-[AQUI ENTRA UMA FOTO]
+        <title>Tudo sobre Google Glass</title>
+        <link rel="stylesheet" href="curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
 
-Menu Principal
-- Home
-- Especificações
-- Fotos
-- Multimídia
-- Fale conosco
+<!-- Para criar um link interligando a aba de CSS com HTML, usar o comando <link:stylesheet> e coloca o diretório do arquivo no parâmetro href"" -->     
+ 
+    </head>
 
+    <script src="curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+
+<!-- Para criar um link interligando a aba de JavaScript com HTML, usar o parâmetro src="" dentro da marcação <script> e coloca o diretório da origem do arquivo criado entre as aspas "" -->    
+    
+    <body>
+        <div id="interface">
+        
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Google Glass</h1>
+                    <h2>A revolução do Google está chegando</h2>
+                </hgroup>
+                
+
+                <figure>
+                    <img id=icone src="curso-html5-pacote01/projeto-glass-html5/_imagens/glass-oculos-preto-peq.png" alt="glass-oculos-preto-peq">
+                </figure>
+
+    <!-- O comando para criar uma lista ordenada é <ol></ol>, assim como, o comando para criar uma lista não ordenada é <ul></ul>, e para especificar o tipo é só adicionar o comando type="" e o tipo, dentro do comando da tag de abertura -->
+
+    <!-- O comando para criar uma área de navegação é o <nav></nav> -->
+
+                <nav id="menu">
+                    <h1>Menu Principal</h1>
+                    <ul type="disc">
+                        <li onmouseover="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/home.png')" onmouseout="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"><a href="indexalterado.html">Home</a></li>
+                        <li onmouseover="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/especificacoes.png')" onmouseout="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"><a href="/specs-alt.html">Especificações</a></li>                  
+                        <li onmouseover="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')" onmouseout="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"><a href="/fotos-alt.html">Fotos</a></li>
+                        <li onmouseover="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/multimidia.png')" onmouseout="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"><a href="/multimidia-alt.html">Multimídia</a></li>
+                        <li onmouseover="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/contato.png')" onmouseout="mudaFoto('curso-html5-pacote01/projeto-glass-html5/_imagens/fotos.png')"><a href="/fale-conosco-alt.html">Fale conosco</a></li>
+                    </ul>
+                </nav>
+            </header>
 Glass > Fotos
 Galeria de Imagens do Google Glass
 por Gustavo Guanabara
@@ -24,6 +61,12 @@ Veja na nossa galeria de fotos várias belas imagens que mostram algumas das pri
 - Vários tipos de lente
 - Informações importantes
 
-Copyright 2013 - by Gustavo Guanabara
-
-Facebook | Twitter
+        <footer id="rodape">
+            <p>
+                Copyright 2020 - by Igor Britto <br>  
+                <a href="https://www.facebook.com/igor.britto.16" target="_blank">Facebook</a> | <a href="https://www.instagram.com/igorbrittoo/" target="_blank">Instagram</a>
+            </p>
+        </footer>    
+        </div>
+    </body>
+</html>
