@@ -60,12 +60,12 @@
                     </header>
 
 
-                    <form action="">
+                    <form method="post" id="fContato" action="mailto:email@gmail.com"> <!-- O parâmetro action="" serve para direcionar para onde vai os dados captados no formulário -->
                        <fieldset id="usuario">
                            <legend>Identificação do Usuário</legend>
-                            <p>Nome: <input type="text" name="tNome" id="cNome" size="30" maxlength="40" placeholder="Nome Completo"></p>
-                            <p>Senha: <input type="password" name="tSenha" id="cSenha" size="10" maxlength="10"></p>
-                            <p>E-mail: <input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder="exemplo@email.com.br"></p>
+                            <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="30" maxlength="40" placeholder="Nome Completo"></p>
+                            <p><label for="cSenha">Senha:</label> <input type="password" name="tSenha" id="cSenha" size="10" maxlength="10"></p>
+                            <p><label for="cMail">E-mail:</label> <input type="email" name="tMail" id="cMail" size="30" maxlength="40" placeholder="exemplo@email.com.br"></p>
                             <fieldset id="sexo">
                                <legend>Sexo:</legend>
                                 <input type="radio" name="tSexo" id="cMasc"><label for="cMasc">Masculino</label> <br>
@@ -76,27 +76,51 @@
 
                        <fieldset id="endereco">
                            <legend>Endereço do Usuário</legend>
-                           <p>Logradouro: <input type="text" name="tRua" id="cRua" size="30" maxlength="80" placeholder="Rua, Av, Travessa, ..."></p>
-                           <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
-                            Estado:
-                            Cidade:
+                           <p><label for="cRua">Logradouro:</label> <input type="text" name="tRua" id="cRua" size="30" maxlength="80" placeholder="Rua, Av, Travessa, ..."></p>
+                           <p><label for="cNum">Número:</label> <input type="number" name="tNum" id="cNum" min="0" max="99999"></p>
+                           <p><label for="cEst">Estado:</label>
+                                <select name="tEst" id="cEst">
+                                    <optgroup label="Região Nordeste">
+                                        <option value="PE">Pernambuco</option>
+                                        <option value="PB">Paraíba</option>
+                                        <option value="RN">Rio Grande do Norte</option>
+                                    </optgroup>
+                                    <optgroup label="Região Norte">
+                                        <option value="PA">Pará</option>
+                                        <option value="AC">Acre</option>
+                                        <option value="AM">Amazonas</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                            <p><label for="cCid">Cidade:</label>
+                                <input type="text" name="tCid" id="cCid" maxlength="40" size="20" placeholder="Sua Cidade" list="cidades">
+                            </p>
+                            <datalist id="cidades">
+                                <option value="Recife"></option>
+                                <option value="Jaboatão dos Guararapes"></option>
+                                <option value="Olinda"></option>
+                                <option value="Cabo de Sto Agostinho"></option>
+                            <!-- O comando <datalist></datalist> serve para linkar uma lista a um espaço de input, tornando a experiência do usuário melhor, sugerindo os nomes listados na lista quando o usuário for digitar -->    
+                            </datalist>
                        </fieldset>     
 
                        <fieldset id="mensagem">
-                       <legend>Mensagem do Usuário</legend>
-                            Grau de Urgência:
-                            Mensagem:
+                        <legend>Mensagem do Usuário</legend>
+                        <p><label for="curgt">Grau de Urgência:</label>
+                            Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max 
+                        </p>
+                        <p><label for="cMsg">Mensagem:</label>
+                            <textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+                        </p>
                        </fieldset>     
 
                        <fieldset id="compra">
-                           <legend>Quero um Google Glass</legend>
-                            Gostaria de adquirir um Google Glass quando disponível
-                            Cor:
-                            Quantidade:
-                            Preço Total: R$
-                       </fieldset>     
-
-
+                            <legend>Quero um Google Glass</legend>
+                            <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
+                            <p><label for="cCor"></label>Cor:</label></p>
+                            <p><label for="cQtd">Quantidade:</label></p>
+                            <p><label for="cTot">Preço Total: R$</label></p>
+                       </fieldset>
                         [BOTÃO ENVIAR]
                     </form>
                 </article>
