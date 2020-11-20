@@ -9,12 +9,19 @@
 
         <title>Tudo sobre Google Glass</title>
         <link rel="stylesheet" href="curso-html5-pacote01/projeto-glass-html5/_css/estilo.css">
-
+        <link rel="stylesheet" href="/curso-html5-pacote01/projeto-glass-html5/_css/form.css">
 <!-- Para criar um link interligando a aba de CSS com HTML, usar o comando <link:stylesheet> e coloca o diretório do arquivo no parâmetro href"" -->     
  
     </head>
 
     <script language="javascript" src="curso-html5-pacote01/projeto-glass-html5/_javascript/funcoes.js"></script>
+    <script>
+        function calc_total() {
+            var qtd = parseInt(document.getElementById('cQtd').value);
+            tot = qtd * 1500;
+            document.getElementById('cTot').value = tot;
+        }
+    </script>
 
 <!-- Para criar um link interligando a aba de JavaScript com HTML, usar o parâmetro src="" dentro da marcação <script> e coloca o diretório da origem do arquivo criado entre as aspas "" -->    
     
@@ -60,7 +67,7 @@
                     </header>
 
 
-                    <form method="post" id="fContato" action="mailto:email@gmail.com"> <!-- O parâmetro action="" serve para direcionar para onde vai os dados captados no formulário -->
+                    <form method="post" id="fContato" action="mailto:email@gmail.com" oninput="calc_total();"> <!-- O parâmetro action="" serve para direcionar para onde vai os dados captados no formulário -->
                        <fieldset id="usuario">
                            <legend>Identificação do Usuário</legend>
                             <p><label for="cNome">Nome:</label> <input type="text" name="tNome" id="cNome" size="30" maxlength="40" placeholder="Nome Completo"></p>
@@ -110,18 +117,24 @@
                             Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2">Max 
                         </p>
                         <p><label for="cMsg">Mensagem:</label>
-                            <textarea name="tMsg" id="cMsg" cols="45" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+                            <textarea name="tMsg" id="cMsg" cols="45" rows="6" placeholder="Deixe aqui sua mensagem"></textarea>
                         </p>
                        </fieldset>     
 
                        <fieldset id="compra">
                             <legend>Quero um Google Glass</legend>
-                            <p><label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label></p>
-                            <p><label for="cCor"></label>Cor:</label></p>
-                            <p><label for="cQtd">Quantidade:</label></p>
-                            <p><label for="cTot">Preço Total: R$</label></p>
+                            <p>
+                                <input type="checkbox" name="tPed" id="cPed" checked>
+                                <label for="cPed">Gostaria de adquirir um Google Glass quando disponível</label>
+                            </p>
+                            <p>
+                                <label for="cCor"></label>Cor:</label>
+                                <input type="color" name="tCor" id="cCor" value="#0000FF">
+                            </p>
+                            <p><label for="cQtd">Quantidade: <input type="number" name="tQtd" id="cQtd" min="0" max="10" value="0"></label></p>
+                            <p><label for="cTot">Preço Total: R$ <input type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></label></p>
                        </fieldset>
-                        [BOTÃO ENVIAR]
+                       <input type="image" src="/curso-html5-pacote01/projeto-glass-html5/_imagens/botao-enviar.png">
                     </form>
                 </article>
             </section>
