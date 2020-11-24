@@ -38,7 +38,7 @@ ul#albumfotos li:hover {
 }
 
 ul#albumfotos li#foto01 {
-    background: url(/curso-html5-pacote01/projeto-glass-html5/_imagens/galeria-01.jpg) ;
+    background: url(/curso-html5-pacote01/projeto-glass-html5/imagens/galeria-01.jpg) ;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: rgb(0,0,0);
@@ -50,7 +50,7 @@ ul#albumfotos li#foto01:hover {
 }
 
 ul#albumfotos li#foto02 {
-    background: url(/curso-html5-pacote01/projeto-glass-html5/_imagens/galeria-02.jpg) ;
+    background: url(/curso-html5-pacote01/projeto-glass-html5/imagens/galeria-02.jpg) ;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: rgb(0,0,0);
@@ -62,7 +62,7 @@ ul#albumfotos li#foto02:hover {
 }
 
 ul#albumfotos li#foto03 {
-    background: url(/curso-html5-pacote01/projeto-glass-html5/_imagens/galeria-03.jpg) ;
+    background: url(/curso-html5-pacote01/projeto-glass-html5/imagens/galeria-03.jpg) ;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: rgb(0,0,0);
@@ -74,7 +74,7 @@ ul#albumfotos li#foto03:hover {
 }
 
 ul#albumfotos li#foto04 {
-    background: url(/curso-html5-pacote01/projeto-glass-html5/_imagens/galeria-04.jpg) ;
+    background: url(/curso-html5-pacote01/projeto-glass-html5/imagens/galeria-04.jpg) ;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: rgb(0,0,0);
@@ -86,7 +86,7 @@ ul#albumfotos li#foto04:hover {
 }
 
 ul#albumfotos li#foto05 {
-    background: url(/curso-html5-pacote01/projeto-glass-html5/_imagens/galeria-05.jpg) ;
+    background: url(/curso-html5-pacote01/projeto-glass-html5/imagens/galeria-05.jpg) ;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: rgb(0,0,0);
@@ -98,7 +98,7 @@ ul#albumfotos li#foto05:hover {
 }
 
 ul#albumfotos li#foto06 {
-    background: url(/curso-html5-pacote01/projeto-glass-html5/_imagens/galeria-06.jpg) ;
+    background: url(/curso-html5-pacote01/projeto-glass-html5/imagens/galeria-06.jpg) ;
     background-position: 50% 50%;
     background-size: 400px 400px;
     background-color: rgb(0,0,0);
